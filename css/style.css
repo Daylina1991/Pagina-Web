@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    background-color: #6e5a8e; /* Tu violeta */
+    color: #fff7fb;
+}
+
+
+header {
+    background-color: #2a1e35;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.header-top, .header-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top {
+    gap: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.logo img {
+    height: 6rem;
+    border-radius: 0.5rem;
+}
+
+.header-search {
+    flex-grow: 1;
+    display: flex;
+    background: white;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.header-search input {
+    flex-grow: 1;
+    border: none;
+    padding: 1rem 1.5rem;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.header-search button {
+    background: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-left: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+}
+
+.header-promo {
+    border: 1px solid #fff;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* Navegación inferior */
+.header-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1rem;
+}
+
+.nav-links ul, .nav-user ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a, .nav-user a {
+    text-decoration: none;
+    color: #fff7fb;
+    font-size: 1.4rem;
+}
+
+/* --- GRID DE PRODUCTOS --- */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+}
+
+.contenido-ppal {
+    display: grid;
+    /* Evita que se superpongan: columnas automáticas */
+    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+    gap: 2.5rem;
+}
+
+/* --- TARJETAS (CARDS) --- */
+.card {
+    background-color: #8a79a8; /* Violeta clarito */
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card-img {
+    background: white;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-info {
+    padding: 2rem;
+    color: #2a1e35;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.envio-txt {
+    color: #00ff84; /* Verde neón para que resalte en el violeta */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.descripcion {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.btn-add {
+    background-color: #2a1e35;
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    background: #2a1e35;
+    margin-top: 6rem;
+}
+
+.footer-list img {
+    width: 5rem; /* El valor que habías corregido */
+    margin: 0 1rem;
+}

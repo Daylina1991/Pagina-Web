@@ -1,75 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logods.jpg">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-   <title>Estilo Indise</title>  
+    <link rel="icon" href="./img/logods.jpg">
+    <title>Indise | Tech - Tienda Gamer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <header>
-            <div class="header-logo">
-                <img src="img/logods.jpg" width="150"  height="150"   alt="aca esta mi logo">    
-        
-                <nav class="header-menubar">
-                    <a  href="pages/categoria.html">Categoria</a>
-                    <a  href="pages/contacto.html">Contacto</a>
-                    <a  href="pages/ubicacion.html">¿Como llegar?</a>
-                    <a  href="pages/formulario.html">Registrate</a>
-                </nav> 
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img src="img/logods.jpg" alt="Logo Indise">
+            </a>
+
+            <div class="header-search">
+                <input type="text" placeholder="Buscar productos, marcas y más...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-    </header>
-        </div>      
-        <main>                                                                                          <!--main contiene secciones-->
-            <div class="contenido-ppal">
-                <section class="secciones">                                                                         <!--primer seccion-->
-                    <article>   
-                    <img src="img/cat4.jpg" width=" 350" height="400" alt="modelo">
-        
-                    </article>
-                </section>   
-                <section class="secciones">                                                               <!--segunda  seccion-->
-                    <article>
-                            <img src="img/cat5.jpg" width="350"  height=" 400"  alt="imagen"><br>
-                            <div>
-                                <h3>Modelo</h3>
-                    
-                            </div>
-                    </article>
-                    <article>
-                        <img src="img/cat3.jpg" width="350" height="400" alt="foto">
-                        <div>
-                            <h3> modelo</h3>
-                        </div>
-                    </article>
-                </section> 
-            </div>       
-        </main>
-        <footer style="text-align: center; background-color:antiquewhite"> 
-            <p>Redes Sociales</p>
-            <nav>
-                <a href=" https://wa.me/5491169541265">
-                   <img width="30" src="../img/watsicon.jpg">
-                </a>
-                <a href="https://www.facebook.com/dayana.tapia.77?mibextid=ZbWKwL">
-                    <img width="30" src="../img/faceicon.jpg"> 
-                </a>
-                <a href="https://www.instagram.com/estilo_indise?igsh=aTVvc3U3N2RhOW5m">
-                    <img width="30" src="../img/instaicon.jpg">  
-                </a>
-                <a href="https://github.com/Daylina1991">
-                    <img width="30" src="../img/github.jpg">
-                <a href="https://github.com/Daylina1991">
-                    <img width="30" src="../img/tiktokicon.jpg">   
-                </a>
-                <i class="fa-brands fa-discord" style="color: blueviolet;"></i>
-                <p> Derechos reservados &copy;2025 </p><br>
+
+            <div class="header-promo">
+                <p>ENVÍO GRATIS <span>EN TU COMPRA</span></p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/formulario.html">Formulario</a></li>
+                    <li><a href="./pages/categoria.html">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="./pages/ofertas.html">Ofertas</a></li>
+                </ul>
             </nav>
-        </footer>  <!--direccion que hace scrol en un amisma pagina-->   
+
+            <nav class="nav-user">
+                <ul>
+                    <li><a href="pages/crearcta.html">Creá tu cuenta</a></li>
+                    <li><a href="pages/ingresar.html">Ingresá</a></li>
+                    <li><a href="pages/carrito.html"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+    
+        <section class="welcome-section">
+            <h1 class="titulo-principal text-secondary">Nuestros Productos</h1>
+            <div class="welcome-text-container">
+                <p class="parrafo">
+                    <strong>Equipate con lo mejor en tecnología de vanguardia.</strong> En Indise Tech, entendemos que tu setup es más que un escritorio: es tu centro de comando, tu estudio de diseño y tu campo de batalla gamer. Por eso, seleccionamos cuidadosamente cada componente para garantizarte una experiencia de usuario superior.
+                </p>
+                <p class="parrafo">
+                    Desde procesadores de última generación con potencia extrema para multitarea, hasta periféricos ergonómicos con iluminación RGB personalizable. Trabajamos con las marcas líderes del mercado para ofrecerte <strong>rendimiento, durabilidad y estilo</strong> en un solo lugar. Explorá nuestro catálogo y llevá tu rendimiento al siguiente nivel.
+                </p>
+                <br>
+            </div>
+        </section>
+        <section class="productos-section">
+            <h2 class="titulo-productos">Hardware y Periféricos</h2>
+            
+            <div class="contenido-ppal">
+                <!-- 1. Auriculares -->
+                <article class="card">
+                    <div class="card-img"><img src="img/auriculares.jpg" alt="Auriculares"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Auriculares Gamer</h3>
+                        <p class="descripcion">Sonido envolvente 7.1 con micrófono HD.</p>
+                        <p class="price">$45.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 2. CPU -->
+                <article class="card">
+                    <div class="card-img"><img src="img/cpu.jpg" alt="CPU"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Procesador i7</h3>
+                        <p class="descripcion">Potencia pura para gaming y desarrollo.</p>
+                        <p class="price">$210.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 3. Monitor -->
+                <article class="card">
+                    <div class="card-img"><img src="img/monitor.jpg" alt="Monitor"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Monitor Gamer 24"</h3>
+                        <p class="descripcion">Full HD 144Hz para máxima fluidez.</p>
+                        <p class="price">$195.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 4. Pad Mouse -->
+                <article class="card">
+                    <div class="card-img"><img src="img/padmouse.jpg" alt="Pad Mouse"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Mouse Pad XL RGB</h3>
+                        <p class="descripcion">Superficie de tela optimizada con bordes LED.</p>
+                        <p class="price">$12.500</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 5. Webcam -->
+                <article class="card">
+                    <div class="card-img"><img src="img/webcam.jpg" alt="Webcam"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Webcam Full HD</h3>
+                        <p class="descripcion">Ideal para streaming y videollamadas claras.</p>
+                        <p class="price">$28.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 6. Teclado -->
+                <article class="card">
+                    <div class="card-img"><img src="img/teclado.jpg" alt="Teclado"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Teclado Mecánico RGB</h3>
+                        <p class="descripcion">Switches red silenciosos y retroiluminación.</p>
+                        <p class="price">$42.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 7. Silla Gamer -->
+                <article class="card">
+                    <div class="card-img"><img src="img/sillagamer.jpg" alt="Silla Gamer"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>Silla Gamer Ergonómica</h3>
+                        <p class="descripcion">Cuero sintético con soporte lumbar ajustable.</p>
+                        <p class="price">$285.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- 8. Disco Duro -->
+                <article class="card">
+                    <div class="card-img"><img src="img/discoduro.jpg" alt="Disco Duro"></div>
+                    <div class="card-info">
+                        <p class="envio-txt">Envío gratis</p>
+                        <h3>SSD 1TB Kingston</h3>
+                        <p class="descripcion">Velocidad de carga ultra rápida.</p>
+                        <p class="price">$65.000</p>
+                        <button class="btn-add">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-wrapper">
+            <p>Seguinos en nuestras redes sociales</p>
+            <nav class="footer-list">
+                <a href="https://wa.me/5491169541265" target="_blank" aria-label="Whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Daylina1991" target="_blank" aria-label="Github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </nav>
+            <div class="footer-bottom">
+                <p>Derechos reservados &copy; 2026 | <strong>Indise Tech</strong></p>
+                <p>Sitio realizado para Talento Tech</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
-

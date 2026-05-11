@@ -1,0 +1,1 @@
+La idea de la pagina es un ecommerce de informatica.
