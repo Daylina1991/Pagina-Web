@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/logods.jpg">
-    <title>Indise | Tech - Tienda Gamer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Indise | Tech </title>
 </head>
 <body>
 
@@ -22,15 +22,17 @@
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
-            <div class="header-promo">
-                <p>ENVÍO GRATIS <span>EN TU COMPRA</span></p>
-            </div>
         </div>
         <div class="header-bottom">
             <nav class="nav-links">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/formulario.html">Formulario</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
                     <li><a href="./pages/categoria.html">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
                     <li><a href="./pages/ofertas.html">Ofertas</a></li>
                 </ul>
@@ -38,7 +40,7 @@
 
             <nav class="nav-user">
                 <ul>
-                    <li><a href="pages/crearcta.html">Creá tu cuenta</a></li>
+                    <li><a href="pages/formularioregis.html">Crear cuenta</a></li>
                     <li><a href="pages/ingresar.html">Ingresá</a></li>
                     <li><a href="pages/carrito.html"><i class="fa-regular fa-heart"></i></a></li>
                     <li><a href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -164,29 +166,44 @@
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-wrapper">
-            <p>Seguinos en nuestras redes sociales</p>
-            <nav class="footer-list">
-                <a href="https://wa.me/5491169541265" target="_blank" aria-label="Whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Daylina1991" target="_blank" aria-label="Github">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </nav>
-            <div class="footer-bottom">
-                <p>Derechos reservados &copy; 2026 | <strong>Indise Tech</strong></p>
-                <p>Sitio realizado para Talento Tech</p>
-            </div>
+    <footer>
+        <nav>
+            <ul class="footer-list">
+                <li>
+                    <a href="https://wa.me/5491169541265" target="_blank">
+                        <img src="../img/watsicon.jpg" alt="whatsapp" />
+                    </a>
+                </li>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="../img/faceicon.jpg" alt="face" />
+                    </a>
+                </li>
+                </li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="../img/instaicon.jpg" alt="insta" />
+                    </a>
+                </li>
+            
+                </li>
+                    <a href="https://github.com/Daylina1991" target="_blank">
+                        <img src="../img/github.jpg" alt="github" />
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="footer-bottom">
+            <p>Derechos reservados &copy; 2026 | <strong>Indise Tech</strong></p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+</script>
 
 </body>
 </html>

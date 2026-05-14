@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/logods.jpg">
-    <title>Categoria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/logods.jpg">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <title>Contacto</title>
 </head>
 <body>
-
     <header>
         <div class="header-top">
             <a href="../index.html" class="logo">
@@ -29,9 +28,27 @@
             </div>
         </div>     
     </header> 
+
     <main class="contenedor-principal">
-        <h1 class="titulo-principal">Sin categoria!!!</h1>
+        <section class="welcome-section"></section>
+        <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+
+        <form action="https://formspree.io/f/mojryjaz" method="POST" class="registration-form">    
+           
+                <label for="nombre">Nombre</label>
+                <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+            
+                <label for="apellido">Apellido</label>
+                <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+          
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message" class="controls" placeholder="Deja tu mensaje..."></textarea>
+            
+
+            <button class="btn-enviar" type="submit">Enviar</button>
+        </form>
     </main>
+    <script src="https://kit.fontawesome.com/83c0045ebc.js" crossorigin="anonymous"></script>
 
     <footer>
         <nav>
@@ -64,5 +81,6 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/83c0045ebc.js" crossorigin="anonymous"></script>
 </body>
 </html>
