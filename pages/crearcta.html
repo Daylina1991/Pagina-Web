@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/logods.jpg">
-    <link rel="icon" href="../img/logods.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Crear cuenta</title>
+    <title>Crear cuenta - Indise Tech</title>
 </head>
 <body>
 
     <header>
         <div class="header-top">
             <a href="../index.html" class="logo">
-                <img src="../img/logods.jpg" alt="Logo Indise">
+                <img src="../img/logods.jpg" alt="Logo Indise" class="logo-img">
             </a>
             <div class="header-search">
                 <input type="text" placeholder="Buscar productos...">
@@ -24,10 +23,16 @@
             <div class="header-promo">
                 <p>REGISTRATE <span>Y OBTENÉ BENEFICIOS</span></p>
             </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <div class="header-bottom">
-            <nav class="nav-links">
+            <nav class="nav-links" id="nav-links">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/formulario.html">Formulario</a></li>
@@ -38,20 +43,28 @@
         </div>
     </header>
 
-    <main class="contenedor-principal">
+    <main class="main-content">
         <section class="form-container">
-            <form action="" class="form-contacto">
+            <form action="https://formspree.io/f/mojryjaz" method="POST" class="registration-form">
                 <h2>Crea tu Cuenta</h2> 
-                <p>Completá tus datos para empezar a comprar.</p>
+                <p style="margin-bottom: 2rem; font-size: 1.4rem;">Completá tus datos para empezar a comprar.</p>
 
-                <input class="controls" type="text" name="nombre" placeholder="Nombre completo" required>
-                <input class="controls" type="email" name="email" placeholder="Correo electrónico" required>
-                <input class="controls" type="password" name="password" placeholder="Contraseña nueva" required>
-                <input class="controls" type="number" name="telefono" placeholder="Teléfono de contacto">
+                <label for="nombre">Nombre completo</label>
+                <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
                 
-                <textarea name="mensaje" class="controls" placeholder="¿Algún comentario adicional?" rows="4"></textarea>
+                <label for="email">Correo electrónico</label>
+                <input class="controls" type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                
+                <label for="password">Contraseña nueva</label>
+                <input class="controls" type="password" name="password" id="password" placeholder="Contraseña nueva" required>
+                
+                <label for="telefono">Teléfono de contacto</label>
+                <input class="controls" type="number" name="telefono" id="telefono" placeholder="Teléfono de contacto">
+                
+                <label for="mensaje">¿Algún comentario adicional?</label>
+                <textarea name="mensaje" id="mensaje" class="controls" placeholder="¿Algún comentario adicional?" rows="4"></textarea>
 
-                <input type="submit" value="Registrarme" class="btn-enviar">
+                <button class="btn-add" type="submit" style="width: 100%; margin-top: 1rem;">Registrarme</button>
             </form>
         </section>
     </main>
@@ -64,22 +77,21 @@
                         <img src="../img/watsicon.jpg" alt="whatsapp" />
                     </a>
                 </li>
+                <li>
                     <a href="https://facebook.com" target="_blank">
                         <img src="../img/faceicon.jpg" alt="face" />
                     </a>
                 </li>
-                </li>
+                <li>
                     <a href="https://instagram.com" target="_blank">
                         <img src="../img/instaicon.jpg" alt="insta" />
                     </a>
                 </li>
-            
-                </li>
+                <li>
                     <a href="https://github.com/Daylina1991" target="_blank">
                         <img src="../img/github.jpg" alt="github" />
                     </a>
                 </li>
-                
             </ul>
         </nav>
         <div class="footer-bottom">
@@ -87,5 +99,14 @@
         </div>
     </footer>
 
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+        if(mobileMenu && navLinks) {
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

@@ -3,54 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Equipate con lo mejor en tecnología de vanguardia. Hardware, periféricos y componentes gamer en Indise Tech.">
+    <meta name="keywords" content="ecommerce, tecnología, hardware, gamer, componentes, pc, auriculares, monitores">
     <link rel="icon" href="./img/logods.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Indise | Tech </title>
+    <title>Indise | Tech - Tu Tienda de Tecnología</title>
 </head>
 <body>
 
     <header>
-        <div class="header-top">
-            <a href="index.html" class="logo">
-                <img src="img/logods.jpg" alt="Logo Indise">
-            </a>
+    <div class="header-top">
+        <a href="index.html" class="logo">
+            <img src="img/logods.jpg" alt="Logo Indise Tech">
+        </a>
 
-            <div class="header-search">
-                <input type="text" placeholder="Buscar productos, marcas y más...">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-
+        <div class="header-search">
+            <input type="text" placeholder="Buscar productos, marcas y más...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="header-bottom">
-            <nav class="nav-links">
-                <div class="menu-toggle" id="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/categoria.html">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="./pages/ofertas.html">Ofertas</a></li>
-                </ul>
-            </nav>
+    </div>
 
-            <nav class="nav-user">
-                <ul>
-                    <li><a href="pages/formularioregis.html">Crear cuenta</a></li>
-                    <li><a href="pages/ingresar.html">Ingresá</a></li>
-                    <li><a href="pages/carrito.html"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
+    <div class="header-bottom">
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
+
+        <nav class="nav-links" id="nav-menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/categoria.html">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="./pages/ofertas.html">Ofertas</a></li>
+                
+                <li class="only-mobile"><a href="pages/formularioregis.html">Crear cuenta</a></li>
+                <li class="only-mobile"><a href="./pages/ingresar.html">Ingresá</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-user">
+            <ul>
+                <li class="hide-desktop"><a href="pages/crearcuenta.html">Crear cuenta</a></li>
+                <li class="hide-desktop"><a href="./pages/ingresar.html">Ingresá</a></li>
+                <li><a href="./pages/carrito.html"><i class="fa-regular fa-heart"></i></a></li>
+                <li>
+                    <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="contador-carrito">0</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main class="contenedor-principal">
-    
         <section class="welcome-section">
             <h1 class="titulo-principal text-secondary">Nuestros Productos</h1>
             <div class="welcome-text-container">
@@ -60,109 +69,12 @@
                 <p class="parrafo">
                     Desde procesadores de última generación con potencia extrema para multitarea, hasta periféricos ergonómicos con iluminación RGB personalizable. Trabajamos con las marcas líderes del mercado para ofrecerte <strong>rendimiento, durabilidad y estilo</strong> en un solo lugar. Explorá nuestro catálogo y llevá tu rendimiento al siguiente nivel.
                 </p>
-                <br>
             </div>
         </section>
+
         <section class="productos-section">
-            <h2 class="titulo-productos">Hardware y Periféricos</h2>
-            
-            <div class="contenido-ppal">
-                <!-- 1. Auriculares -->
-                <article class="card">
-                    <div class="card-img"><img src="img/auriculares.jpg" alt="Auriculares"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Auriculares Gamer</h3>
-                        <p class="descripcion">Sonido envolvente 7.1 con micrófono HD.</p>
-                        <p class="price">$45.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 2. CPU -->
-                <article class="card">
-                    <div class="card-img"><img src="img/cpu.jpg" alt="CPU"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Procesador i7</h3>
-                        <p class="descripcion">Potencia pura para gaming y desarrollo.</p>
-                        <p class="price">$210.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 3. Monitor -->
-                <article class="card">
-                    <div class="card-img"><img src="img/monitor.jpg" alt="Monitor"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Monitor Gamer 24"</h3>
-                        <p class="descripcion">Full HD 144Hz para máxima fluidez.</p>
-                        <p class="price">$195.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 4. Pad Mouse -->
-                <article class="card">
-                    <div class="card-img"><img src="img/padmouse.jpg" alt="Pad Mouse"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Mouse Pad XL RGB</h3>
-                        <p class="descripcion">Superficie de tela optimizada con bordes LED.</p>
-                        <p class="price">$12.500</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 5. Webcam -->
-                <article class="card">
-                    <div class="card-img"><img src="img/webcam.jpg" alt="Webcam"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Webcam Full HD</h3>
-                        <p class="descripcion">Ideal para streaming y videollamadas claras.</p>
-                        <p class="price">$28.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 6. Teclado -->
-                <article class="card">
-                    <div class="card-img"><img src="img/teclado.jpg" alt="Teclado"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Teclado Mecánico RGB</h3>
-                        <p class="descripcion">Switches red silenciosos y retroiluminación.</p>
-                        <p class="price">$42.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 7. Silla Gamer -->
-                <article class="card">
-                    <div class="card-img"><img src="img/sillagamer.jpg" alt="Silla Gamer"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>Silla Gamer Ergonómica</h3>
-                        <p class="descripcion">Cuero sintético con soporte lumbar ajustable.</p>
-                        <p class="price">$285.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <!-- 8. Disco Duro -->
-                <article class="card">
-                    <div class="card-img"><img src="img/discoduro.jpg" alt="Disco Duro"></div>
-                    <div class="card-info">
-                        <p class="envio-txt">Envío gratis</p>
-                        <h3>SSD 1TB Kingston</h3>
-                        <p class="descripcion">Velocidad de carga ultra rápida.</p>
-                        <p class="price">$65.000</p>
-                        <button class="btn-add">Agregar al carrito</button>
-                    </div>
-                </article>
-            </div>
+            <h2 class="titulo-productos">Hardware y Periféricos</h2> 
+            <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
         </section>
     </main>
 
@@ -170,40 +82,40 @@
         <nav>
             <ul class="footer-list">
                 <li>
-                    <a href="https://wa.me/5491169541265" target="_blank">
-                        <img src="../img/watsicon.jpg" alt="whatsapp" />
+                    <a href="https://wa.me/5491169541265" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </li>
-                    <a href="https://facebook.com" target="_blank">
-                        <img src="../img/faceicon.jpg" alt="face" />
+                <li>
+                    <a href="https://facebook.com" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
-                </li>
-                    <a href="https://instagram.com" target="_blank">
-                        <img src="../img/instaicon.jpg" alt="insta" />
+                <li>
+                    <a href="https://instagram.com" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
-            
-                </li>
-                    <a href="https://github.com/Daylina1991" target="_blank">
-                        <img src="../img/github.jpg" alt="github" />
+                <li>
+                    <a href="https://github.com/Daylina1991" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-                
             </ul>
         </nav>
         <div class="footer-bottom">
             <p>Derechos reservados &copy; 2026 | <strong>Indise Tech</strong></p>
         </div>
     </footer>
+
     <script>
         const menuToggle = document.getElementById('mobile-menu');
-        const navList = document.querySelector('.nav-list');
+        const navLinks = document.querySelector('.nav-links'); 
 
         menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('active');
+            navLinks.classList.toggle('active');
         });
-</script>
-
+    </script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>

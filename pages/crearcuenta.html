@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/logods.jpg">
-    <link rel="stylesheet" href="../css/style.css"> 
-    <title>Contacto - Indise Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registro Tech</title>
 </head>
 <body>
     <header>
@@ -34,19 +34,32 @@
     </header> 
 
     <main class="main-content">
-        <h1 class="titulo-contacto">Contactanos</h1>
+        <h1 class="titulo-contacto">Crear Cuenta</h1>
 
-        <form action="https://formspree.io/f/mojryjaz" method="POST" class="registration-form">     
+        <form action="https://formspree.io/f/mojryjaz" method="POST" class="registration-form">      
             <label for="nombre">Nombre</label>
             <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-        
+            
             <label for="apellido">Apellido</label>
             <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
-      
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="message" class="controls" placeholder="Deja tu mensaje..." rows="5" required></textarea>
+            
+            <label for="fechanas">Fecha de Nacimiento</label>
+            <input class="controls" type="date" name="fechanas" id="fechanas" required>
+            
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ej: 1123456789">
+            
+            <label for="email">E-Mail</label>
+            <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" required>
+            
+            <label for="clave">Contraseña</label>
+            <input class="controls" type="password" name="clave" id="clave" placeholder="Ingrese su contraseña" required>
 
-            <button class="btn-add" type="submit">Enviar</button>
+            <p style="font-size: 1.3rem; margin: 0.5rem 0;">Estoy de acuerdo con <a href="#" style="color: #188e9d; text-decoration: none;">Términos y Condiciones</a></p>
+            
+            <button class="btn-add" type="submit" style="width: 100%; margin-top: 1rem;">Registrar</button>
+            
+            <p style="text-align: center; font-size: 1.4rem; margin-top: 1rem;"><a href="#" style="color: #188e9d; text-decoration: none;">¿Ya tengo cuenta?</a></p>
         </form>
     </main>
 
@@ -89,6 +102,5 @@
             });
         }
     </script>
-    <script type="module" src="../js/contacto.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "nombre": "Auriculares HD",
+    "precio": 1004,
+    "descripcion": "Sonido envolvente de alta fidelidad, micrófono con cancelación de ruido y almohadillas memory foam.",
+    "img": "img/auriculares.jpg",
+    "envioGratis": true
+  },
+  {
+    "id": "2",
+    "nombre": "Monitor Gamer Full HD 24",
+    "precio": 76859,
+    "descripcion":"Descripción: Pantalla de alta definición con tasa de refresco fluida y colores vivos, ideal para trabajar, estudiar o disfrutar de tus videojuegos favoritos con total claridad.",
+    "img": "img/monitor.jpg",
+    "envioGratis": true
+  },
+  {
+    "id": "3",
+    "nombre": "Mouse Óptico Ergonómico",
+    "precio": 47,
+    "descripcion":"Descripción: Diseño cómodo y sensor de alta precisión con botones laterales configurables, pensado para un deslizamiento suave y jornadas intensas de uso.",
+    "img": "img/padmouse.jpg",
+    "envioGratis": true
+  },
+  {
+    "id": "4",
+    "nombre": "Parlante Bluetooth Estéreo",
+    "precio": 60.000,
+    "descripcion":"Descripción: Sonido nítido y graves potentes en un diseño compacto y portátil. Conexión inalámbrica estable y batería de larga duración para tu escritorio.",
+    "img": "img/parlantes.jpg",
+    "envioGratis": true
+  },
+  {
+    "id": "5",
+    "nombre": "Teclado inlambrico Slim",
+    "precio": 96.000,
+    "descripcion":"Descripción: Diseño ultra delgado, ligero y silencioso. Conexión libre de cables para mantener tu espacio ordenado y trabajar con máxima comodidad desde cualquier lugar.",
+    "img": "img/teclado.jpg"
+    
+  },
+  {
+    "id": "6",
+    "nombre": "Laptop PRO 15.6 Intel¡5",
+    "descripcion": "Rendimiento excepcional y diseño ligero para llevar tus proyectos a todas partes.",
+    "precio": 45000,
+    "img": "img/laptop.jpg",
+    "envioGratis": true
+  },
+  {
+    "id": "7",
+    "nombre": "Impresora Sistema Continuo Color",
+    "descripcion": "Olvidate de los cartuchos con este sistema de alta eficiencia y bajo costo por página. Ideal para impresiones frecuentes, trabajos escolares y documentos del hogar con colores vivos y nítidos.",
+    "precio": 28500,
+    "img": "img/impresora.jpg",
+    "envioGratis": true
+  },
+  {
+    "id": "8",
+    "nombre": "Silla Gamer Confort Pro",
+    "descripcion": "Ergonomía avanzada con respaldo reclinable y almohadillas ajustables. Diseñada para mantener una postura cómoda y saludable durante horas de juego o trabajo.",
+    "precio": 62000,
+    "img": "img/sillagamer.jpg",
+    "envioGratis": true
+  }
+]

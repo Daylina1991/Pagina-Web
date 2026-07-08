@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/logods.jpg">
-    <title>Carrito</title>
+    <title>Carrito Tech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <header>
         <div class="header-top">
             <a href="../index.html" class="logo">
@@ -31,51 +30,62 @@
             <nav class="nav-links">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="formulario.html">Formulario</a></li>
-                    <li><a href="productos.html">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="categoria.html">Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
                     <li><a href="ofertas.html">Ofertas</a></li>
                 </ul>
             </nav>
 
             <nav class="nav-user">
                 <ul>
-                    <li><a href="registro.html">Creá tu cuenta</a></li>
+                    <li><a href="crearcuenta.html">Creá tu cuenta</a></li>
                     <li><a href="login.html">Ingresá</a></li>
                     <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li>
+                        <a href="carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i> <span id="contador-carrito">0</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main class="contenedor-principal">
-        <h1 class="titulo-principal">Título de la Página</h1>
+        <h1 class="titulo-principal">Carrito de Compras</h1>
+        
+        <section id="contenedor-carrito" class="contenedor-tarjetas"> <!--PRODUCTOS DEL carrito-->
+            </section>
+
+        <div id="acciones-carrito" class="acciones-carrito">   <!--boton de eliminar y finalizar -->
+            </div>
+
+        <section id="resumen-carrito">   
+            </section>
     </main>
 
     <footer>
         <nav>
             <ul class="footer-list">
                 <li>
-                    <a href="https://wa.me/5491169541265" target="_blank">
-                        <img src="../img/watsicon.jpg" alt="whatsapp" />
+                    <a href="https://wa.me/5491169541265" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </li>
-                    <a href="https://facebook.com" target="_blank">
-                        <img src="../img/faceicon.jpg" alt="face" />
+                <li>
+                    <a href="https://facebook.com" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
-                </li>
-                    <a href="https://instagram.com" target="_blank">
-                        <img src="../img/instaicon.jpg" alt="insta" />
+                <li>
+                    <a href="https://instagram.com" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
-            
-                </li>
-                    <a href="https://github.com/Daylina1991" target="_blank">
-                        <img src="../img/github.jpg" alt="github" />
+                <li>
+                    <a href="https://github.com/Daylina1991" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-                
             </ul>
         </nav>
         <div class="footer-bottom">
@@ -83,5 +93,6 @@
         </div>
     </footer>
 
+    <script type="module" src="../js/carrito.js"></script>   <!--agrega type module y enlace al carrito.js-->
 </body>
 </html>
